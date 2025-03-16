@@ -7,7 +7,7 @@ Many people suffer from panic attacks, increased anxiety, and face other Problem
 With this application, we want to make people aware of such problems, that it is normal, and most importantly, they are not alone. It also offers a direct help with a variety of practices that will help and teach methods to control the conditions.
 
 # User Flow 
-![MindMend - User Flow Diagram](https://github.com/shubhh7935/MindMend---Mobile-App-for-Mental-Health/blob/main/MindMend%20-%20UserFlow.png)
+![MindMend - User Flow Diagram](https://github.com/shubhh7935/MindMend---Mobile-Application-for-Mental-Health/blob/main/MindMend%20-%20UserFlow.png)
 
 # Color Reference
 
