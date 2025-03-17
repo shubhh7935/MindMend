@@ -46,3 +46,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+dependencies {
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+}

@@ -20,4 +20,4 @@ With this application, we want to make people aware of such problems, that it is
 
 - [@Shubham Singh](https://www.github.com/shubhh7935)
 - [@Rakshit Basavaraj Ambi](https://www.github.com/octokatherine)
-- [@Dharmendra Prasad Sah Teli](https://www.github.com/octokatherine)
+- [@Dharmendra Prasad Sah Teli](https://www.github.com/Dharmendra2567)
