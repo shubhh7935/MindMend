@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.mindmend_mobileappformentalhealth"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.mindmend_mobileappformentalhealth"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 

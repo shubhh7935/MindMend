@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/EmeraldGreen">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Profile Logo"
+        app:tint="@android:color/white" />
+
+    <!-- Sign In Text -->
+    <TextView
+        android:id="@+id/signInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:backgroundTint="@color/Neutral"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/Neutral"
+        android:layout_below="@id/signInText"
+        android:layout_marginTop="24dp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:backgroundTint="@color/Neutral"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/Neutral"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="12dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/GreenJoy"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="24dp" />
+
+    <!-- Social Media Login Options -->
+    <LinearLayout
+        android:id="@+id/socialMediaLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/facebookLogin"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_facebook"
+            android:layout_marginEnd="16dp"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/googleLogin"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_google"
+            android:layout_marginEnd="16dp"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/twitterLogin"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_twitter"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
