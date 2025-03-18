@@ -30,18 +30,24 @@ class LoginActivity : AppCompatActivity() {
 
         // Handle login button click
         loginButton.setOnClickListener {
-            val email = emailEditText.text.toString().trim()
-            val password = passwordEditText.text.toString().trim()
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
 
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
-            } else if (email == "test@email.com" && password == "12345") {
-                Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, SurveyActivity::class.java))
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                // Example authentication check
+                if (email == "test@gmail.com" && password == "password") {
+                    Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, SurveyActivity::class.java)
+                    startActivity(intent)
+                    finish() // Close LoginActivity after successful login
+                } else {
+                    Toast.makeText(this, "Invalid email or password", Toast.LENGTH_SHORT).show()
+                }
             } else {
-                Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
             }
         }
+
 
         // Handle social media login clicks
         facebookLogin.setOnClickListener {
