@@ -79,5 +79,5 @@ Follow the pull request template:
 # Contributers
 
 - [@Shubham Singh](https://www.github.com/shubhh7935)
-- [@Rakshit Basavaraj Ambi](https://www.github.com/octokatherine)
+- [@Rakshit Basavaraj Ambi](https://github.com/rakshitambi7a)
 - [@Dharmendra Prasad Sah Teli](https://www.github.com/Dharmendra2567)
