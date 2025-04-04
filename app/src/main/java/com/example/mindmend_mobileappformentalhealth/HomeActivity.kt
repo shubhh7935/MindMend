@@ -1,6 +1,8 @@
 package com.example.mindmend_mobileappformentalhealth
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,11 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val nextActivitybtn = findViewById<Button>(R.id.nextActivitybtn)
+        nextActivitybtn.setOnClickListener{
+            val intent = Intent(this, ExternalStorage::class.java)
+            startActivity(intent)
         }
     }
 }

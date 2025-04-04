@@ -7,7 +7,7 @@
     android:padding="24dp"
     android:background="@color/EmeraldGreen">
 
-    <!-- Profile Image -->
+
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="80dp"
