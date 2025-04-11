@@ -2,24 +2,88 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     android:fillViewport="true">
 
     <LinearLayout
         android:id="@+id/today_container"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Mood Prompt -->
+        <TextView
+            android:id="@+id/mood_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling today?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Mood Spinner -->
+        <Spinner
+            android:id="@+id/mood_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/moods"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Recommendations Section -->
+        <TextView
+            android:id="@+id/recommendation_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommendations"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
 
         <TextView
-            android:text="Mood Diary"
-            android:textSize="18sp"
-            android:layout_marginBottom="10dp"
-            android:textStyle="bold"
-            android:layout_height="50dp"
-            android:layout_width="50dp"/>
+            android:id="@+id/recommendation_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a mood to see recommendations."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
 
-        <!-- Add Recommendations, Challenges, and Exercises similarly -->
+        <!-- Challenges Section -->
+        <TextView
+            android:id="@+id/challenges_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Challenges"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/challenges_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Challenges will appear here."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Exercises Section -->
+        <TextView
+            android:id="@+id/exercises_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercises"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/exercises_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercises based on mood will appear here."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
 
     </LinearLayout>
 </ScrollView>
